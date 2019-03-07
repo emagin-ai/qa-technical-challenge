@@ -1,20 +1,26 @@
 # QA Lead Technical Challenge
 
+## Instructions:
+- given the below high level requirements, write a quick *test strategy* and *test plan* to cover off the use cases of the overall system
+- indicate how you would test the system (manual vs automated or otherwise)
+- write some automated tests where applicable 
+- Bonus points if you can get the application running (details below) and your automated tests run against it
+
 ## Situation
 
 The company has been contracted to provide a monitoring solution for a local community
 swimming pool.  The pool has a chlorine sensor that measures the chlorine levels
 at set intervals and then transmits the measurements.
 
-The engineering team has built a server to supply the data from the customer's sensor.  On top of that they have built a real-time web dashboard to visualize the data and send alerts when the cholorine level is not acceptable. The front end dynamically loads historical and real-time data when it starts up.
+The engineering team has built a server to supply the data from the customer's sensor.  On top of that they have built a real-time web dashboard to visualize the data and send alerts when the chlorine level is not acceptable. The front end dynamically loads historical and real-time data when it starts up.
 
 ## Requirements
 
 - a web page in HTML and JavaScript that connects to the server via websocket
 and then plots the data returned in a line chart.  
-- the page needs to show thename of the location being monitored  
+- the page needs to show the name of the location being monitored  
 - the chart needs to show the time along the x-axis and the chlorine level along the y-axis
-- the chlorine level in measured in parts per million (ppm)
+- the chlorine level is measured in parts per million (ppm)
 - the page also needs to alert the operator if the chlorine level drops below 1.0 ppm or above 3.0 ppm.
 
 On first connection, the server will return an array containing the previous 24
@@ -37,12 +43,6 @@ exercise, the server will actually be sending the data every five seconds.  The
 data is in the same format as the historic data except that it is not an array.
 
 The server will continue to send data until the client disconnects.
-
-## Instructions:
-- given these high level requirements, write a quick *test strategy* and *test plan* to cover off the use cases of the overall system
-- indicate how you would test the system (manual vs automated or otherwise)
-- write some automated tests where applicable 
-- Bonus points if you can get the application running (details below) and your automated tests run against it
 
 ## Running the Server
 
