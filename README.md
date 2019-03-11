@@ -1,9 +1,10 @@
 # QA Lead Technical Challenge
 
 ## Instructions:
-- given the below high level requirements, write a quick *test strategy* and *test plan* to cover off the use cases of the overall system
-- indicate how you would test the system (manual vs automated or otherwise)
-- write some automated tests where applicable 
+- Given the below high level requirements, write a quick *test strategy* and *test plan* to cover off the use cases of this product
+- Indicate how you would test the product (manual vs automated or otherwise)
+- Indicate how you would organize the test plan for future use where enhancements are bug fixes are constantly being added to it every week
+- Write some automated tests where applicable 
 - Bonus points if you can get the application running (details below) and your automated tests run against it
 
 ## Situation
